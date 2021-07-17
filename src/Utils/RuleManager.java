@@ -59,15 +59,5 @@ public class RuleManager {
 		
 		return new Rule(else_data, switches);
 	}
-	
-	public static void main(String[] args) {
-		Rule rule = RuleManager.import_rule("../BattleOpenWorld/config/Rules/windmill.rbf");
-		
-		String[] neighbors = new String[] {
-			"","","","Field","","","","",""	
-		};
-		
-		System.out.println(rule.get_object_name(neighbors));
-	}
 
 }
